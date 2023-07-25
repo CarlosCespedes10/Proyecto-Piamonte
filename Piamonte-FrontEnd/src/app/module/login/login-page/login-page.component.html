@@ -1,0 +1,32 @@
+<div class="min-vh-100 bg_color d-grid align-items-center">
+    <div class="container room border bg_color_div text-center">
+        <div class="m-4">
+            <h1 class="mt-5 text-start font_color_h1">Hola!</h1>
+            <h3 class="text-start font_color">Bienvenido a la hacienda Piamonte</h3>
+        </div>
+        <div class="m-4">
+            <form (ngSubmit)="login()" [formGroup] = "formularioLogin">
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label text-start">Email</label>
+                    <div class="col-sm-12 col-md-12">
+                      <input type="email" class="rounded-3 form-control border" id="inputPassword" placeholder="example@gmail.com">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label text-start">Contraseña</label>
+                    <div class="col-sm-12 col-md-12">
+                        <input type="password" class="rounded-3 form-control border" id="inputPassword" placeholder="Introduce la contraseña">
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="mt-2 btn btn-success rounded-5 w_60 font_size_buttom">Entrar</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <p class="font_color_p mb-4">No tienes cuenta? <a href="" class="text-decoration-none font_color_span"><span class="font_color_span">Registrate</span></a></p>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>
+
