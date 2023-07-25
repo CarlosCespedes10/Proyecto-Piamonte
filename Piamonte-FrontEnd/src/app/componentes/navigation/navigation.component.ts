@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import rutasImagenes from 'src/app/shared/imagen/rutasImagenes';
 
 @Component({
   selector: 'app-navigation',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
+  imagenLogo = rutasImagenes.IMAGEN_LOGO;
 }
