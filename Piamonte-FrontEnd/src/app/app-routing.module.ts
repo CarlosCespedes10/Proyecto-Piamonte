@@ -9,7 +9,9 @@ const routes: Routes = [
   {path:'piamonte-login-page', loadChildren: () => 
           import('./module/login/login.module').then(m => m.LoginModule)}, 
   {path:'piamonte-registro-page', loadChildren: () => 
-          import('./module/registro/registro.module').then(m => m.RegistroModule)}
+          import('./module/registro/registro.module').then(m => m.RegistroModule)},
+  {path:'piamonte-inventario-page', loadChildren: () => 
+          import('./module/inventario/inventario.module').then(m => m.InventarioModule)}
 ];
 
 @NgModule({
