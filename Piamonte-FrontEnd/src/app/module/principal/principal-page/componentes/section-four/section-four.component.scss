@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.line{
+    border-bottom: 2px solid #6A9B19 ;
+}
+
+.titulo1{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.titulo2{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.maquinaria1{
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.maquinaria2{
+    
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.letra{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.seccion1
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.imagen1{
+    display: flex;
+    width: 120px;
+    height: 100px;
+    margin-top: 30px;
+
+}
+
+.imagen2{
+    display: flex;
+    width: 120px;
+    height: 100px;
+    margin-left: 25px;
+    margin-top: 30px;
+
+}
