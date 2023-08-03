@@ -6,22 +6,22 @@
             <h3 class="text-start font_color">Ingresa y disfruta de la hacienda Piamonte</h3>
         </div>
         
-        <!--(ngSubmit)="login()"-->
+        <!--"-->
         <div>
-            <form  [formGroup] = "formularioRegistro">
+            <form  (ngSubmit)="registro()" [formGroup] = "formularioRegistro">
                 <div class="col-sm-12 col-md-12">
                     <label for="text-name" class="col-sm-2 col-md-2 col-form-label text-start">Nombre</label>
-                    <input type="text" id="text-name" class="rounded-3 form-control border" placeholder="Ingresa tu Nombre" formControlName="nombre">
+                    <input type="text" class="rounded-3 form-control border" placeholder="Ingresa tu Nombre" formControlName="nombreEmpleado">
                 </div>
                 
                 <div class="col-sm-12 col-md-12">
                     <label for="inputPassword" class="col-sm-2 col-md-2 col-form-label text-start">Email</label>
-                    <input type="email" class="rounded-3 form-control border" id="inputPassword" placeholder="example@gmail.com">
+                    <input type="email" class="rounded-3 form-control border" placeholder="example@gmail.com" formControlName="correoEmpleado">
                 </div>
 
                 <div class="mb-3 ">
                     <label for="inputPassword" class="col-sm-2 col-form-label text-start">Contraseña</label>
-                    <input type="password" class="rounded-3 form-control border" id="inputPassword" placeholder="Introduce la contraseña">
+                    <input type="password" class="rounded-3 form-control border" placeholder="Introduce la contraseña" formControlName="contraseniaEmpleado">
                     
                 </div>
                 
@@ -30,13 +30,10 @@
                 </div>
             </form>
         </div>
-
             <div>
-                <p class="font_color_p mb-4">Ya tienes cuenta? <a href="" class="text-decoration-none font_color_span"><span class="font_color_span">Inicia Sesión</span></a></p>
+                <p class="font_color_p mb-4">Ya tienes cuenta? <a href="" routerLink="/piamonte-login-page" class="text-decoration-none font_color_span"><span class="font_color_span">Inicia Sesión</span></a></p>
             </div>
-            
     </div>
-    <app-footer></app-footer>
 </div>
 
 
