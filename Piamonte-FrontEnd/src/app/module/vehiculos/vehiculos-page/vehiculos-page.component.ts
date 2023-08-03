@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./vehiculos-page.component.scss']
 })
 export class VehiculosPageComponent {
-
+  //Realizar los servicios de consumo de Apis de acuerdo a lo explicado 
+  //Carlos Cespedes.
 }
