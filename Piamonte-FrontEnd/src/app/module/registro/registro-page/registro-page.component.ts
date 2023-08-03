@@ -16,22 +16,19 @@ export class RegistroPageComponent
 
   constructor (private router: Router, public formulario: FormBuilder, public registroValidacionService: RegistroValidacionService, private route: ActivatedRoute){
     this.formularioRegistro = this.formulario.group({
-      nombre:['', [Validators.required]],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      nombreEmpleado:['', [Validators.required]],
+      correoEmpleado: ['', [Validators.required, Validators.email]],
+      contraseniaEmpleado: ['', [Validators.required]]
     });
   }
 
   ngOnInit() {}
 
-
-
-  login(): void
+  registro(): void
   {
-
+    
     if (this.formularioRegistro.valid) 
     {
-      
       const datosRegistro: RegistroEntidad = this.formularioRegistro.value;
 
       this.registroValidacionService.validarDatosRegistro(datosRegistro).subscribe(
@@ -48,8 +45,6 @@ export class RegistroPageComponent
           alert("Error al Registrar el Usuario. Por favor, inténtalo de nuevo.");
         }
       )
-
     }
   }
 }
-
