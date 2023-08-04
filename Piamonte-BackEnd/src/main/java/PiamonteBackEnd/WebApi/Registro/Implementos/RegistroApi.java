@@ -8,7 +8,6 @@ import PiamonteBackEnd.WebApi.Registro.InterfaceRegistroApi;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
 @RequestMapping(InterfaceRegistroEndPoints.URL_BASE_REGISTRO_EMPLEADO)
 public class RegistroApi implements InterfaceRegistroApi {
     private final RegistroEmpleadoServicio registroEmpleadoServicio;
